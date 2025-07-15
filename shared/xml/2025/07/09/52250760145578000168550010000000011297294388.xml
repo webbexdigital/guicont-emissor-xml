@@ -1,0 +1,65 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="fundoNFe">
+<head><title>
+	Portal da Nota Fiscal Eletrônica
+</title>
+    <!-- CSS -->
+    <link href="css/geral.css" rel="stylesheet" type="text/css" /><link href="css/classes.css" rel="stylesheet" type="text/css" /><meta http-equiv="cache-control" content="no-store, no-cache, must-revalidate, Post-Check=0, Pre-Check=0" /><meta http-equiv="pragma" content="no-cache" /><meta http-equiv="expires" content="0" />
+    </head>
+<body>
+    <form method="post" action="./downloadNFe.aspx?msg=O+certificado+digital+utilizado+%u00e9+inv%u00e1lido.&amp;403%3bhttps%3a%2f%2fwww.nfe.fazenda.gov.br%3a443%2fportal%2fdownloadNFe.aspx%3ftipoConsulta=resumo&amp;a=B11AS4zGKyOXO9EfAdVchYU3r%2fb1AY+MYDsvIL%2fvlXSVzIv7ySQC+WY+IWw5Eu5K&amp;tipoConteudo=7PhJ+gAVw2g%3d&amp;lp=QjExQVM0ekdLeU9YTzlFZkFkVmNoWVUzci9iMUFZK01ZRHN2SUwvdmxYU1Z6SXY3eVNRQytaZG5rQzhoZmEyNHY1dkhXeG9kbVdzSlU3YzV3b1ZyOW5qZFN5VVg2WjV30" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNzI4MzM3OTI1D2QWAmYPZBYCAgMPZBYCAgMPZBYCAgMPDxYCHgRUZXh0BS1PIGNlcnRpZmljYWRvIGRpZ2l0YWwgdXRpbGl6YWRvIMOpIGludsOhbGlkby5kZGRL3CKf+ctegjy98drcPm47FN5Qxw==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/portal/WebResource.axd?d=ZWO9axJrMUCOr1izP3UEZRCC9H9dses7etW7JecjiAOQDqMwdG-StzfDPAgcsQ8hxRkl-AMsAJBR-BfkCGB56pQ3gKo1&amp;t=638628099619783110" type="text/javascript"></script>
+
+
+<script src="/portal/ScriptResource.axd?d=mEdZQL4-NwECxt-JTyttk6L9nZIgV2gXEYVXAtZsi0K6ekMkFlv9Yn_Kj22VMi8DGrNLu0_DpTP9BqO8cJwvdqgjvvPW2azeebt459xHltLpU2IYCjWzfsXnSvCpl58N24rAFBpwmeIv8vlDIdkuJMLyc185M28vUneHfEZinqa8QFoa0&amp;t=2a9d95e3" type="text/javascript"></script>
+<script src="/portal/ScriptResource.axd?d=_4eicGuFpUqdgWen_lV3HusxGEZOmOKKDBxJqwShbSOkmNnRzePJCRrfaqi4yAG4omXSLCzZIOXtktjVsEiYo-GKVvPgshIWEGRj0wBWGGBZ17M9NOTmgil71sUoZPjju8MLRc_ZAKcMsgCu1bH4TYQkMzdgF4kGwmOy40aQpegCvFgb0&amp;t=2a9d95e3" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="0703F84E" />
+</div>
+    <div id="divCentralErro">
+        <div class="divLinkImgNFe" onclick="javascript:location.href = 'principal.aspx'">
+        </div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        <div class="divMensagemPaginaErro">
+                     
+            
+    <span id="ctl00_ContentPlaceHolder1_lblMensagem" style="font-weight:bold;">A seguinte falha ocorreu: </span>
+    <span id="ctl00_ContentPlaceHolder1_lblMensagemErro">O certificado digital utilizado é inválido.</span>   
+              
+
+        </div>
+    </div>
+    </form>
+</body>
+</html>

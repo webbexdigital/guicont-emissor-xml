@@ -1,0 +1,36 @@
+{
+  "name": "marquesjunior/apisimples",
+  "description": "MAIOR HUB DE APIS DO BRASIL",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Marques Junior",
+      "email": "contato@integraphp.com",
+      "role": "Developer",
+      "homepage": "https://www.integraphp.com.br"
+    }
+  ],
+  "config": {
+    "vendor-dir": "vendor"
+  },
+  "autoload": {
+    "psr-4": {
+      "Source\\": "source/"
+    },
+    "files": [
+      "source/Config.php",
+      "source/Helpers.php"
+    ]
+  },
+  "require": {
+    "coffeecode/router": "1.0.*",
+    "opis/database": "^4.0",
+    "league/plates": "v4.0.0-alpha",
+    "coffeecode/uploader": "1.0.11",
+    "phpmailer/phpmailer": "v6.5.4",
+    "nfephp-org/sped-nfe": "v5.0.127",
+    "nfephp-org/sped-cte": "v4.1.2",
+    "nfephp-org/sped-da": "v1.1.6"
+  }
+}
