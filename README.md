@@ -1,6 +1,6 @@
 # Guia Cont
 
-Link: [https://guiacont.com.br/emissor-xml/]
+Link: https://guiacont.com.br/emissor-xml/
 
 ## Funcionalidades da versão paga:
 
@@ -14,4 +14,4 @@ Link: [https://guiacont.com.br/emissor-xml/]
 
 5. Implementar listagem das NFs/XMLs emitidas por um CNPJ.
 
-**Obs:** O sistema possui área de cadastro: [https://guiacont.com.br/emissor-xml/cadastro]
+**Obs:** O sistema possui área de cadastro: https://guiacont.com.br/emissor-xml/cadastro
