@@ -2,7 +2,7 @@
 
 $typeConnectionConfig = $_SERVER['HTTP_HOST'];
 if ($typeConnectionConfig == 'localhost') {
-    $url_info = 'http://localhost/nfxml';
+    $url_info = 'http://localhost';
 } else {
     $url_info = 'https://deltaway.com.br/testes/xml';
 }
