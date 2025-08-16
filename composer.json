@@ -16,11 +16,14 @@
   },
   "autoload": {
     "psr-4": {
-      "Source\\": "source/"
+      "app\\": "app"
     },
     "files": [
       "source/Config.php",
-      "source/Helpers.php"
+      "source/Helpers.php",
+      "app/helpers/constants.php",
+      "app/router/router.php",
+      "app/core/controller.php"
     ]
   },
   "require": {
