@@ -7,7 +7,9 @@ require "bootstrap.php";
 try{
     $data = router();
 
-    extract($data['data']);
+    if(!isset($data['data'])){
+        throw new Exception('O índice data está faltando');
+    }
     
     if(!isset($data['view'])){
         throw new Exception('O índice view não existe.');
@@ -16,6 +18,8 @@ try{
     if(!file_exists(VIEWS.$data['view'])){
         throw new Exception("Essa view {$data['view']} não existe.");
     }
+    
+    extract($data['data']);
 
     $view = $data['view'];
 

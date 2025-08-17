@@ -1,3 +1,64 @@
-<h1><?php echo "HOME" ?></h1>
+<div class="content-wrapper">
 
-<h3><?php var_dump($data) ?></h3>
+  <section class="content-header">
+    <h1>Baixar XML de NFe/CTe
+    <small>Download de xml e DANFe com a chave e certificado digital. Gratuito para uma chave por vez.</small>
+    </h1>
+  </section>
+  <section class="content">
+    <div class="box">
+      <div class="box-body">
+        <div class="row">
+          <div class="form-group col-lg-12">
+            <label>CHAVE</label>
+            <input type="text" value="35231217642282000123550010010569891142110714" id="chave" o class="form-control" autocomplete="off">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <button type="button" class="btn btn-block btn-primary" onclick="Consultar();">Consultar</button>
+          </div>
+        </div>
+        <hr />
+        <div class="row" style="display: none;" id="consultado">
+          <div class="col-lg-6">
+            <button type="button" class="btn btn-block btn-info" onclick="getPDF();"><img src="<?= asset("icon/impressora.png"); ?>" width="64" /><br />Imprimir</button>
+          </div>
+          <div class="col-lg-6">
+            <button type="button" class="btn btn-block btn-primary" onclick="getXML();"><img src="<?= asset("icon/download-direto.png"); ?>" width="64" /><br/>Download XML</button>
+          </div>
+        </div>
+
+        <input type="hidden" id="stringsFSistChave" />
+        <input type="hidden" id="stringsFSistUrl" />
+        <input type="hidden" id="stringsFSistClick" />
+        <input type="hidden" id="stringsFSistHtml" />
+        <input type="hidden" id="stringsFSistDados" />
+        <input type="hidden" id="stringsFSistLink" />
+        <input type="hidden" id="stringsFSistXml" />
+        <input type="hidden" id="stringsFSistVersao" />
+        <hr />
+        <input id="strings1" type="hidden" />
+        <input id="strings2" type="hidden" />
+        <input id="strings3" type="hidden" />
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"></h4>
+      </div>
+      <div class="modal-body">
+        <div class="retornoModal"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>

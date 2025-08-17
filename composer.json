@@ -5,10 +5,10 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "Marques Junior",
-      "email": "contato@integraphp.com",
+      "name": "Heleno Salgado",
+      "email": "helenosalgado19@gmail.com",
       "role": "Developer",
-      "homepage": "https://www.integraphp.com.br"
+      "homepage": "https://heleno.dev"
     }
   ],
   "config": {
@@ -19,8 +19,6 @@
       "app\\": "app"
     },
     "files": [
-      "source/Config.php",
-      "source/Helpers.php",
       "app/helpers/constants.php",
       "app/router/router.php",
       "app/core/controller.php"
