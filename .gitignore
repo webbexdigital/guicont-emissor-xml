@@ -1,11 +1,2 @@
 vendor/
 error_log
-docs/
-img/
-shared/
-source/
-views/
-composer.phar
-index.php
-logout.php
-pdf.php

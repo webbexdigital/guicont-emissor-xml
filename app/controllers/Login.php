@@ -2,12 +2,12 @@
 
 namespace app\controllers;
 
-class Home {
+class Login {
     
     public function index($params){
         return [
-            'view' => 'home.php',
-            'data' => ['title' => 'Home']
+            'view' => 'login.php',
+            'data' => ['title' => 'Login']
         ];
     }
     
