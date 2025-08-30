@@ -54,15 +54,14 @@ erDiagram
 
     usuarios ||--o{ empresas : "possui"
     usuarios ||--o{ pagamentos : "realiza"
+    usuarios ||--o{ enderecos : "pode ter"
+    
     empresas ||--o{ chaves_acesso : "possui"
     empresas ||--o{ xml_downloads : "gera"
+    empresas ||--o{ enderecos : "pode ter"
+
     chaves_acesso ||--o{ xml_downloads : "é usada em"
     xml_downloads ||--|| xml_nfe_detalhes : "é detalhado por"
-
-    subgraph "Endereço Polimórfico"
-        usuarios --o{ enderecos : "pode ter"
-        empresas --o{ enderecos : "pode ter"
-    end
 ```
 **Nota sobre o relacionamento polimórfico:** A tabela `enderecos` pode se relacionar tanto com `usuarios` quanto com `empresas`, o que é indicado pela coluna `tipo_entidade`.
 
