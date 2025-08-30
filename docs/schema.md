@@ -4,6 +4,68 @@ O sistema é projetado para gerenciar e processar Notas Fiscais Eletrônicas (NF
 
 O esquema foi escrito e validado para ser compatível com **MySQL**.
 
+## Diagrama de Entidade e Relacionamento (DER)
+
+O diagrama abaixo ilustra as principais tabelas e seus relacionamentos.
+
+```mermaid
+erDiagram
+    usuarios {
+        id INT PK
+        nome VARCHAR
+        email VARCHAR
+        assinante BOOLEAN
+    }
+    empresas {
+        id INT PK
+        usuario_id INT FK
+        nome_fantasia VARCHAR
+        cnpj VARCHAR
+    }
+    enderecos {
+        id INT PK
+        tipo_entidade ENUM
+        entidade_id INT
+        logradouro VARCHAR
+    }
+    pagamentos {
+        id INT PK
+        usuario_id INT FK
+        gateway_id VARCHAR
+        status VARCHAR
+    }
+    chaves_acesso {
+        id INT PK
+        empresa_id INT FK
+        ativo BOOLEAN
+    }
+    xml_downloads {
+        id INT PK
+        empresa_id INT FK
+        chave_acesso_id INT FK
+        status VARCHAR
+    }
+    xml_nfe_detalhes {
+        id INT PK
+        xml_id INT FK
+        chave_acesso VARCHAR
+        numero_nota VARCHAR
+    }
+
+    usuarios ||--o{ empresas : "possui"
+    usuarios ||--o{ pagamentos : "realiza"
+    empresas ||--o{ chaves_acesso : "possui"
+    empresas ||--o{ xml_downloads : "gera"
+    chaves_acesso ||--o{ xml_downloads : "é usada em"
+    xml_downloads ||--|| xml_nfe_detalhes : "é detalhado por"
+
+    subgraph "Endereço Polimórfico"
+        usuarios --o{ enderecos : "pode ter"
+        empresas --o{ enderecos : "pode ter"
+    end
+```
+**Nota sobre o relacionamento polimórfico:** A tabela `enderecos` pode se relacionar tanto com `usuarios` quanto com `empresas`, o que é indicado pela coluna `tipo_entidade`.
+
 ## Tabelas Principais
 
 ### 1. Usuários e Empresas
