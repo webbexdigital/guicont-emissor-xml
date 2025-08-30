@@ -9,3 +9,14 @@ function all($table, $fields = '*'){
         var_dump($e->getMessage());
     }
 }
+
+function userFindBy($field, $value, $fields = '*'){
+    try{
+        $conn = connect();
+        $prepare = $conn->prepare("select $fields from user where $field = :$field");
+        $prepare->execute([$field => $value]);
+        return $prepare->fetch();
+    }catch(PDOException $e){
+        var_dump($e->getMessage());
+    }
+}
